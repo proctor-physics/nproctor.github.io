@@ -171,9 +171,9 @@
                 <th>Description</th>
             </tr>
             <tr>
-                <td>void</td>
-                <td>checkStatLimit ( )</td>
-                <td>Ensures the cats stats are within the range [0, 100]</td>
+                <td>int</td>
+                <td>checkStatLimit (int stat)</td>
+                <td>Checks that the stat is within the range [0, 100]. Returns 0 if the stat is less than 0. Returns 100 if the stat is over 100. Otherwise, returns stat.</td>
             </tr>
           </table>
 
