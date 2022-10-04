@@ -1,0 +1,181 @@
+<htm> 
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 3px;
+        }
+    </style>
+    <body>
+        <h1> Cat Class (Part 2) </h1>
+        
+        <hr/>
+        
+        <h2> Program Description </h2>
+        <p> In this assignment you will create a basic Cat class. </p>
+        
+        <hr/>
+        
+        <h2> Program Requirements </h2>
+        <p> Your class shall have the following constructors: </p>
+
+        <table>
+            <tr>
+              <th>Constuctor</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+                <td>Cat ( )</td>
+                <td>Constructs a cat with full thirst, health, energy, and happiness.</td>
+            </tr>
+            <tr>
+              <td>Cat (String name)</td>
+              <td>Constructs a cat with full thirst, health, energy, and happiness and assigns it the given name.</td>
+            </tr>
+        <table>
+
+
+        <p> Your class shall have the following <b>private</b> attributes: </p>
+        <table>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Initial Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>name</td>
+              <td>""</td>
+              <td>The name of the cat.</td>
+            </tr>
+            <tr>
+              <td>int</td>
+              <td>hunger</td>
+              <td>100</td>
+              <td>The hunger value of the cat (100 is full; 0 is hungry)</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>thirst</td>
+                <td>100</td>
+                <td>The thirst value of the cat (100 is hydrated; 0 is thirsty)</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>energy</td>
+                <td>100</td>
+                <td>The energy value of the cat (100 is energized; 0 is exhausted)</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>happiness</td>
+                <td>100</td>
+                <td>The happiness value of the cat (100 is happy; 0 is sad)</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>age</td>
+                <td>0</td>
+                <td>The age of the cat in days</td>
+            </tr>
+          </table>
+        
+          <p> Your Cat class shall have the following <b>public</b> methods: </p>
+          <table> 
+            <tr>
+                <th>Return Type</th>
+                <th>Method Signature</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>pet ( )</td>
+                <td>Adds 20 to the cats happiness. The cat outputs "Prr!"</td>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>feed ( )</td>
+                <td>Adds 20 to the cats hunger.</td>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>water ( )</td>
+                <td>Adds 20 to the cats thirst.</td>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>play ( )</td>
+                <td>Adds 20 to the cats happiness. Subtract 20 from the cats energy.</td>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>sleep ( )</td>
+                <td>Sets cats energy to 100. Resets everything else to 0. Increases cats age by 1 day.</td>
+            </tr>
+
+            <tr>
+                <td>void</td>
+                <td>sleep (int hours)</td>
+                <td>Increases cats energy by `hours`. Decreases everything else by `hours`. Does not effect cats age.</td>
+            </tr>
+
+            <tr>
+                <td>void</td>
+                <td>setName (String name) </td>
+                <td>Renames the cat.</td>
+            </tr>
+
+            <tr>
+                <td>String</td>
+                <td>getName ( )</td>
+                <td>Returns the name of the cat.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>getHunger ( )</td>
+                <td>Returns the hunger value of the cat.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>getThirst ( )</td>
+                <td>Returns the thirst value of the cat.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>getHappiness ( )</td>
+                <td>Returns the happiness value of the cat.</td>
+            </tr>
+
+
+            <tr>
+                <td>int</td>
+                <td>getEnergy ( )</td>
+                <td>Returns the energy value of the cat.</td>
+            </tr>
+
+            <tr>
+                <td>int</td>
+                <td>getHeath ( )</td>
+                <td>Returns the health value of the cat. The health of the cat is determined by: health = (happiness + thirst + hunger + energy)/4 - (age/10). The health of the cat cannot be lower than 0.</td>
+            </tr>
+
+          </table>
+
+          <p> Your Cat class shall have the following <b>private</b> methods: </p>
+          <table> 
+            <tr>
+                <th>Return Type</th>
+                <th>Method Signature</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>checkStatLimit ( )</td>
+                <td>Ensures the cats stats are within the range [0, 100]</td>
+            </tr>
+          </table>
+
+    </body>
+</htm>
